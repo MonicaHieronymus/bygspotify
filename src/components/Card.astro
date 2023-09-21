@@ -1,0 +1,33 @@
+---
+const {header, text} = Astro.props;
+---
+
+<article class="card">
+    <img src="https://picsum.photos/id/65/150/150" alt="">
+    <h1>{header}</h1>
+    <p>{text}<br></br></p>
+</article>
+
+    
+    <style>
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin-left: 21.5rem;
+        margin-top: 2rem;
+    }
+    
+    .card img {
+        width: 160px;
+        border-radius: 5px;
+
+    }
+    
+    .card p{
+    display: flex;
+    margin-top: -0.5rem;
+    line-height: 1.5;
+    }
+
+    </style>

@@ -1,45 +1,22 @@
 ---
-
+const {name, show} = Astro.props;
 ---
 
-<article class="shelf1">
-    <h1>Spotify Playlists</h1>
-<p>Show all</p>
-</article>
-
 <article class="shelf">
-<img src="https://picsum.photos/id/65/150/150" alt="">
-<h1>Today's Top Hits</h1>
-<p>Jung Kook is on top of the <br>Hottest 50!</br></p>
+<h1>{name}</h1>
+<p>{show}</p>
 </article>
 
 
 
 <style>
 
-.shelf1 {
+.shelf {
     display: flex;
     flex-direction: row;
     gap: 50rem;
     margin-top: 2rem;
     margin-left: 21.5rem;
-}
-.shelf {
-    display: flex;
-    flex-direction: column;
-    margin-left: 21.5rem;
-    margin-top: 2rem;
-}
-
-.shelf img {
-    width: 160px;
-    border-radius: 5px;
-}
-
-.shelf p{
-display: flex;
-margin-top: -0.5rem;
-line-height: 1.5;
 }
 
 
