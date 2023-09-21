@@ -1,5 +1,9 @@
 ---
 import "../css/styles.css";
+import Header from "../components/Header.astro";
+import Sidenav from "../components/Sidenav.astro";
+import Shelf from "../components/Shelf.astro";
+import Card from "../components/Card.astro";
 ---
 
 <!DOCTYPE html>
@@ -13,17 +17,27 @@ import "../css/styles.css";
 
 </head>
 <body>
-	<article class="sidenav">
-	
-	</article>
-	<main>
-		<article class="header">
-	
-		</article>
+	<Sidenav/>
 
- <article class="imgcard">
+	<main>
 	
-</article>
+<Header/>
+
+<Shelf>
+<Card/>
+<Card/>
+<Card/>
+<Card/>
+<Card/>
+<Shelf />
+
+<Shelf >
+	<Card/>
+	<Card/>
+	<Card/>
+	<Card/>
+	<Card/>
+	<Shelf />
 
 	</main>
    
