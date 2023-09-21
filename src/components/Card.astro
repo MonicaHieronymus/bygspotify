@@ -5,9 +5,8 @@ const {header, text} = Astro.props;
 <article class="card">
     <img src="https://picsum.photos/id/65/150/150" alt="">
     <h1>{header}</h1>
-    <p>{text}<br></br></p>
+    <p>{text}</p>
 </article>
-
     
     <style>
 
@@ -16,18 +15,34 @@ const {header, text} = Astro.props;
         flex-direction: column;
         margin-left: 21.5rem;
         margin-top: 2rem;
+        border-radius: 0.5rem;
+        background-color: grey;
+        margin-bottom: 0.5rem;
+        width: 18%;
+        padding: 2rem;
     }
     
     .card img {
-        width: 160px;
+        width: 200px;
         border-radius: 5px;
-
+        margin: auto;
     }
     
     .card p{
     display: flex;
     margin-top: -0.5rem;
     line-height: 1.5;
+    margin: auto;
     }
+
+    .card h1 {
+        margin: auto;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        font-size: 22px;
+    }
+
+
 
     </style>
