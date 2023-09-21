@@ -3,7 +3,7 @@
 
 <article>
 
-    <section class="firstnav">
+    <section class="spotify_btns">
 <div class="spoti">
     <img src="/icons/logo-alt.svg" alt=""><p>Spotify</p>
 </div>
@@ -17,8 +17,8 @@
 </div>
 </section>
 
-<section>
-<div class="secondnav">
+<section class="library">
+<div class="yourlibrary">
     <img src="/icons/library-icon.svg" alt="">
     <h3>Your Library</h3>
 
@@ -26,7 +26,13 @@
     <img src="/icons/create-icon.svg" alt="">
 </div>
 </div>
-</section>
+
+
+<div class="createplaylist"> 
+    <h3>Create your first playlist</h3>
+<p>It's easy, we'll help you</p>
+<button>Create playlist</button>
+</div>
 
 <section class="footernav">
 
@@ -46,20 +52,24 @@
 <p>Cookies</p>
 </div>
 
-<img src="" alt="">
-</section>
+<div class="english_btn">
+   <img src="/icons/globe-icon.svg" alt="">
+   <p>English</p>
+</div>
 
+</section>
+</section>
 </article>
 
 <style>
 
 
-.firstnav {
+.spotify_btns {
 margin-left: 1.5rem;
 margin-top: 1.5rem;
 
 }
-.firstnav img {
+.spotify_btns img {
 max-width: 100%;
 }
 
@@ -71,17 +81,46 @@ max-width: 100%;
     gap: 0.2rem;
 }
 
-.secondnav {
+.yourlibrary {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-    margin-left: 1.5rem;
+    margin-left: 0.5rem;
 }
 
 .plus {
     display: flex;
     flex-direction: row;
-  margin-left: 4rem;
+  margin-left: 4.5rem;
+margin-top: -0.5rem;
+  width: 16px;
+}
+
+.createplaylist {
+    border-radius: 0.5rem;
+  width: 260px;
+  height: 150px;
+  display: inline-block;
+  padding: 0.7rem;
+    background-color: rgb(153, 155, 155);
+}
+
+.createplaylist h3, p, button {
+    margin-left: 0.5rem;
+}
+
+.createplaylist button {
+    border-radius: 2rem;
+    padding: 0.6rem;
+    border: 2px;
+    margin-left: 1rem;
+}
+
+.library {
+    border-radius: 0.5rem;
+  display: inline-block;
+  padding: 0.5rem;
+    background-color: rgb(130, 130, 130);
 }
 
 .three {
@@ -101,13 +140,26 @@ gap: 1rem;
     flex-direction: column;
 }
 
+.english_btn {
+    display: flex;
+    border-radius: 3rem;
+    color: rgb(223, 223, 223);
+    border: 1px solid;
+    width: 100px;
+    font-size: 15px;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+}
+
 .footernav {
-    margin-left: 1.5rem;
     font-size: 12px;
 }
 
 .secondnav, .footernav {
     margin-top: 2rem;
 }
+
+
 
 </style>
