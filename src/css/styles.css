@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   background-color: rgb(150, 149, 149);
 }
@@ -12,4 +8,9 @@ img {
 
 button {
   cursor: pointer;
+}
+
+.grid_1-1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }

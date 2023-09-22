@@ -1,9 +1,9 @@
 ---
-const {header, text} = Astro.props;
+const {img, header, text} = Astro.props;
 ---
 
 <article class="card">
-    <img src="https://picsum.photos/id/65/150/150" alt="">
+    <img src={img}>
     <h1>{header}</h1>
     <p>{text}</p>
 </article>
@@ -11,28 +11,26 @@ const {header, text} = Astro.props;
     <style>
 
     .card {
-        display: flex;
-        flex-direction: column;
         margin-left: 21.5rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
         border-radius: 0.5rem;
         background-color: grey;
-        margin-bottom: 0.5rem;
-        width: 18%;
-        padding: 2rem;
+        width: 30%;
+        padding: 1rem;
     }
     
-    .card img {
+   .card img {
         width: 200px;
         border-radius: 5px;
         margin: auto;
     }
     
-    .card p{
+  .card p{
     display: flex;
     margin-top: -0.5rem;
     line-height: 1.5;
     margin: auto;
+    font-size: 13px;
     }
 
     .card h1 {
@@ -40,8 +38,8 @@ const {header, text} = Astro.props;
         margin-left: 0rem;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
-        font-size: 22px;
-    }
+        font-size: 18px;
+    }*/
 
 
 
