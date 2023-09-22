@@ -3,17 +3,20 @@ const {name, show} = Astro.props;
 ---
 
 <div>
+  <div class="flex"> 
 <h1>{name}</h1>
 <p>{show}</p>
+  </div>
 <div class="Card_grid">
 <slot />
-</div>
+   </div>
 </div>
 
 
 
 
 <style>
+
 
 .Card_grid{
     display: grid;
@@ -27,8 +30,17 @@ const {name, show} = Astro.props;
     margin-top: 2rem;
 }
 
+h1 {
+font-size: 25px;
+margin-left: 2px;
+
+}
 p {
     cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    margin-top: -50px;
 }
 
 
