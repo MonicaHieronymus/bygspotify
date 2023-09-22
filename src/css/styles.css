@@ -2,10 +2,6 @@ body {
   background-color: rgb(150, 149, 149);
 }
 
-img {
-  max-width: 100%;
-}
-
 button {
   cursor: pointer;
 }
@@ -13,8 +9,9 @@ button {
 .grid_1-5 {
   display: grid;
   grid-template-columns: 1fr 5fr;
+  gap: 1.5rem;
 }
 .Card1 {
-  margin-left: 50px;
+  margin-left: 100px;
   margin-top: -20rem;
 }
