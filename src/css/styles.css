@@ -15,3 +15,20 @@ button {
   margin-left: 100px;
   margin-top: -20rem;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  z-index: 8;
+  background: rgb(171, 27, 147);
+  background: linear-gradient(
+    90deg,
+    rgba(171, 27, 147, 1) 1%,
+    rgba(225, 120, 237, 1) 51%,
+    rgba(0, 170, 255, 1) 100%
+  );
+  left: 0;
+  right: 0;
+}
