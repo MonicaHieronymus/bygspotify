@@ -2,21 +2,33 @@
 const {name, show} = Astro.props;
 ---
 
-<article class="shelf">
+<div>
 <h1>{name}</h1>
 <p>{show}</p>
-</article>
+<div class="Card_grid">
+<slot />
+</div>
+</div>
+
 
 
 
 <style>
+
+.Card_grid{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
 
 .shelf {
     display: flex;
     flex-direction: row;
     gap: 50rem;
     margin-top: 2rem;
-    margin-left: 21.5rem;
+}
+
+p {
+    cursor: pointer;
 }
 
 

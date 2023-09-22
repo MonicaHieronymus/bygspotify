@@ -9,3 +9,12 @@ img {
 button {
   cursor: pointer;
 }
+
+.grid_1-5 {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.Card1 {
+  margin-left: 50px;
+  margin-top: -20rem;
+}

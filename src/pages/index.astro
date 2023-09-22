@@ -16,31 +16,40 @@ import Card from "../components/Card.astro";
     <title>Spotify - Web Player: Music for everyone</title>
 
 </head>
+
+
 <body>
+ <main class="grid_1-5">
 
-<Sidenav/>
-<Header/>
+<div>
+    <Sidenav/>
+</div>
 
-<main>
-<Shelf name="Spotify Playlists" show = "Show all"/>
 
-<Card img = "https://picsum.photos/id/65/150/150" header="Today's Top Hits" text = "Jung Kook is on top of the Hottest 50!"/>
+<div>
+  <Header/>
+<Shelf name="Spotify Playlists" show = "Show all">
+
+<Card class="Card1" img = "https://picsum.photos/id/65/150/150" header="Today's Top Hits" text = "Jung Kook is on top of the Hottest 50!"/>
 <Card img = "https://picsum.photos/id/68/150/150" header="All Out 2010s" text = "The biggest songs of the 2010s."/>
 <Card img = "https://picsum.photos/id/76/150/150" header="Rock Classics" text = "Rock legends & epic songs that continue to..."/>
 <Card img = "https://picsum.photos/id/240/150/150" header= "Chill Hits" text = "Kick back to the best new and recent chill hits"/>
 <Card img = "https://picsum.photos/id/331/150/150" header="Viva Latino" text = "Today's top Latin hits, elevando nuestra músic..."/>
+</Shelf>
 
 
-<Shelf name="Focus" show = "Show all"/>
+<Shelf name="Focus" show = "Show all">
 
 <Card img = "https://picsum.photos/id/325/150/150" header="Peaceful Piano" text = "Peaceful piano to help you slow down, breathe, an..."/>
 <Card img = "https://picsum.photos/id/334/150/150" header="Deep Focus" text = "Keep calm ancd focus with ambient and post-rock..."/>
 <Card img = "https://picsum.photos/id/338/150/150" header="Instrumental Study" text = "Focus with soft study music in the background."/>
 <Card img = "https://picsum.photos/id/349/150/150" header= "Workday Lounge" text = "Lounge and chill out music for your workday."/>
 <Card img = "https://picsum.photos/id/364/150/150" header="Beats to think to" text = "Focus with melodic techno and tech house."/>
+</Shelf>
+</div>  
 
-</main>
-   
+</main> 
+
 </body>
 </html>
 

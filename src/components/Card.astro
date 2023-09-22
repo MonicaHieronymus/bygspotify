@@ -2,26 +2,45 @@
 const {img, header, text} = Astro.props;
 ---
 
-<article class="card">
-<img src={img}>
-<h1>{header}</h1>
-<p>{text}</p>
-</article>
-    
-    <style>
+<div class="Card_bg">
+    <div>
+        <img class="albumCover" src={img}>
+    <h1>{header}</h1>
+    </div>
 
-  
-.card {
+    <p>{text}</p>
+<div>
+   
+   
+   
+   <style>
+
+.Card_bg {
+background: hotpink;
+max-width: 174px;
+position: relative;
+z-index:1;
+border-radius:10px;
+padding-top:10px;
+color: white;
+}  
+
+.albumCover {
+    margin: auto;
+    display: block;
+}
+
+/*.card {
         margin-left: 21.5rem;
         margin-top: 1rem;
         border-radius: 0.5rem;
         background-color: grey;
-        width: 30%;
+        width: 180px;
         padding: 1rem;
     }
     
    .card img {
-        width: 200px;
+        width: 100%;
         border-radius: 5px;
         margin: auto;
     }
@@ -40,7 +59,6 @@ const {img, header, text} = Astro.props;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
         font-size: 18px;
-    }
-
+    }*/
 
     </style>
