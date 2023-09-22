@@ -21,7 +21,11 @@ const {name, show} = Astro.props;
 .Card_grid{
     display: grid;
     grid-template-columns: repeat(7,1fr);
+    margin-bottom: 2rem;
 }
+
+/*grid-template-columns: repeat(auto-fill, 180px);*/
+/*grid-template-columns: repeat(7,1fr);*/
 
 .shelf {
     display: flex;
@@ -33,7 +37,6 @@ const {name, show} = Astro.props;
 h1 {
 font-size: 25px;
 margin-left: 2px;
-
 }
 p {
     cursor: pointer;

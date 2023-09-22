@@ -11,10 +11,6 @@ button {
   grid-template-columns: 1fr 5fr;
   gap: 1.5rem;
 }
-.Card1 {
-  margin-left: 100px;
-  margin-top: -20rem;
-}
 
 .footer {
   display: flex;
