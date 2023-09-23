@@ -1,3 +1,10 @@
+---
+import "../css/styles.css";
+import Header from "../components/Header.astro";
+import Sidenav from "../components/Sidenav.astro";
+import Footer from "../components/Footer.astro";
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +16,25 @@
 </head>
 
 <body>
-<main>
+    
+ <main class="grid_1-5">
+
+    <div>
+        <Sidenav/>
+    </div>
+    
+    <div>
+        <div class="headerbox">
+          <Header/>
+        </div>
 
 
 
 </main>
+
+<footer class="grid_1-1 footer_bg">
+    <Footer />
+</footer>
+
 </body>
 </html>
