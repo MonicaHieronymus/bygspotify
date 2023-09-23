@@ -1,5 +1,5 @@
 ---
-const {img, header, text} = Astro.props;
+const {img, header, text, playBtn, spotifyLogo} = Astro.props;
 ---
 
 
@@ -7,9 +7,8 @@ const {img, header, text} = Astro.props;
 	<div class="Card_bg"> 
 		<div>
 			<img class="albumCover" src={img}>
-			<img class="spotifyLogo" src="/icons/logo-alt.svg" alt="spotify logo">
-
-				<img class="playBtn" src="/icons/play-icon.svg" alt="play ikon knap">
+				{spotifyLogo && <img class="spotifyLogo" src="/icons/logo-alt.svg" alt="spotify logo"/>}
+				{playBtn && <img class="playBtn" src="/icons/play-icon.svg" alt="play ikon knap"/>}
 		
 			<h1> {header}</h1>
 		</div>

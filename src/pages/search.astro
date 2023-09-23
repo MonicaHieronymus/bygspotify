@@ -1,8 +1,10 @@
 ---
 import "../css/styles.css";
+import Header from "../components/Header.astro";
 import Sidenav from "../components/Sidenav.astro";
+import Shelf from "../components/Shelf.astro";
+import Card from "../components/Card.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-import Headersearch from "../components/Headersearch.astro";
 ---
 
     
@@ -12,8 +14,34 @@ import Headersearch from "../components/Headersearch.astro";
     </div>
 
     <div>
-        <Headersearch/>
-    </div>
+        <div class="headerbox">
+            <Header searchbar ={true}/>
+          </div>
 
+   <div class="browseall">
+    <Shelf name="Browse all">
+        
+        <div class="grid_5">
+    <Card header ="Podcast" />
+    <Card header ="Made For You" />
+    <Card header ="Charts" />
+    <Card header ="New Releases" />
+    <Card header ="Discover" />
+
+    <Card header ="Live Events" />
+    <Card header ="New Releases" />
+    <Card header ="Pop" />
+    <Card header ="Summer" />
+    <Card header ="Party" />
+    </Shelf>
+    </div>
+</div>
+</div>
 </MainLayout>
 
+
+<style>
+
+
+
+</style>

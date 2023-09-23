@@ -49,6 +49,22 @@ main {
   width: 99%;
 }
 
+.browseall {
+  background-color: rgb(18, 18, 18);
+  border-radius: 5px;
+  padding-bottom: 1.3rem;
+  padding: 1rem;
+  width: 96.2%;
+  height: 84.3%;
+  margin-left: -0.5rem;
+}
+
+.grid_5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
 .headerbox {
   background-color: rgb(9, 9, 9);
   border-radius: 5px;

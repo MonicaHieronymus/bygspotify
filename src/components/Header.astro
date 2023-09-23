@@ -1,4 +1,5 @@
 ---
+const {searchbar} = Astro.props;
 ---
 
 <article>
@@ -20,6 +21,11 @@
 </ul>
 </div>
 
+
+   {searchbar && <div class="searchbar"><img class="searching" src ="/icons/search-icon.svg" alt=""/>
+    <p class="whatdoyouwant">What do you want to listen to?</p></div>} 
+
+
 <div class="signlog">
     <div class="signup">
     <p>Sign up</p>
@@ -37,6 +43,30 @@
 
 <style>
 
+.searchbar {
+            margin-left: -60rem;
+            margin-right: 40rem;
+            display: inline-block;
+            margin-top: 1rem;
+            height: 40px;
+            width: 300px;
+            border-radius: 50px;
+            color: rgb(231, 231, 231);
+            background-color: rgb(36,36,36);
+        }
+
+.searchbar img {
+    margin-left: 0.8rem;
+    margin-top: 0.6rem;
+    width: 20px;
+}
+
+        .whatdoyouwant {
+            margin-left: 3rem;
+            margin-top: -1.4rem;
+            font-size: 12px;
+        }
+    
 .header {
 display: flex; 
 flex-direction: row;
