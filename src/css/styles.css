@@ -6,6 +6,7 @@ h1,
 p,
 h3 {
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 button {
@@ -34,7 +35,14 @@ button {
 .colorbox {
   background-color: rgb(18, 18, 18);
   border-radius: 5px;
-  padding-bottom: 2rem;
-  padding-top: 0.5rem;
+  padding-bottom: 1.3rem;
+  padding-top: 0.1rem;
   margin-left: -0.5rem;
+}
+
+.headerbox {
+  background-color: rgb(9, 9, 9);
+  border-radius: 5px;
+  margin-left: -0.5rem;
+  margin-top: 1.5rem;
 }

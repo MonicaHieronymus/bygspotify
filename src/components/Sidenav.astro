@@ -4,15 +4,18 @@
 <article>
     <section class="spotify_btns">
 <div class="spoti">
-    <img src="/icons/logo-alt.svg" alt=""><p>Spotify</p>
+    <img src="/icons/logo-alt.svg" alt="">
+    <p>Spotify</p>
 </div>
 
 <div class="home">
-    <img src="/icons/home.svg" alt=""><p>Home</p>
+    <img src="/icons/home.svg" alt="">
+    <p>Home</p>
 </div>
 
 <div class="search">
-    <img src="/icons/search-icon.svg" alt=""> <p>Search</p>
+    <img src="/icons/search-icon.svg" alt=""> 
+    <p>Search</p>
 </div>
 </section>
 
@@ -75,10 +78,23 @@ cursor: pointer;
 .spoti, .home, .search {
     display: flex;
     gap: 1rem;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
 }
-.spoti {
-    gap: 0.2rem;
+.spoti img {
+   width: 25px;
+}
+
+.spoti p {
+    margin-left: -0.7rem;
+}
+
+.home p, .search p {
+    margin-left: 0.5rem;
+    color: rgb(179,179,179);
+}
+
+.home p:hover, .search p:hover {
+    color: rgb(255, 255, 255);
 }
 
 .yourlibrary {
@@ -88,6 +104,15 @@ cursor: pointer;
     margin-left: 0.5rem;
     cursor: pointer;
     margin-top: 0.5rem;
+}
+
+.yourlibrary h3 {
+    color: rgb(167, 167,167);    
+    font-size: 16px;
+    margin-left: 0.5rem;
+}
+.yourlibrary h3:hover {
+    color: rgb(255, 255, 255);
 }
 
 .plus {
@@ -109,14 +134,23 @@ margin-top: -0.5rem;
 }
 
 .createplaylist h3, p, button {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
+}
+
+.createplaylist h3 {
+    font-size: 15px;
+}
+
+.createplaylist p {
+    font-size: 13px;
 }
 
 .createplaylist button {
     border-radius: 2rem;
     padding: 0.6rem;
-    border: 2px;
+    border: 1px;
     margin-left: 1rem;
+    margin-top: 0.5rem;
 }
 
 .library {
@@ -147,17 +181,24 @@ margin-top: 2.7rem;
     cursor: pointer;
 }
 
+.three p, .two p, .one p {
+    color: rgb(154, 154, 154);
+    font-size: 12px;
+    margin-left: 5px;
+    letter-spacing: 0.2px;
+}
+
 .english_btn {
     display: flex;
     border-radius: 3rem;
     border: 1px solid;
     border-color: rgb(107, 107, 107);
-    width: 100px;
+    width: 115px;
     font-size: 15px;
     justify-content: center;
-    margin-top: 4rem;
-    margin-left: 0.5rem;
-    margin-bottom: 4.2rem;
+    margin-top: 1.7rem;
+    margin-left: 0.4rem;
+    margin-bottom: 6rem;
     cursor: pointer;
 }
 
@@ -167,6 +208,8 @@ margin-top: 2.7rem;
 
 .english_btn p {
     color: rgb(255, 255, 255);
+    margin-left: 0.5rem;
+    font-size: 13px;
 }
 
 .footernav {
