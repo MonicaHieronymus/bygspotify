@@ -13,6 +13,13 @@ button {
   cursor: pointer;
 }
 
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 1em;
+}
+
 .grid_1-5 {
   display: grid;
   grid-template-columns: 1fr 5fr;
