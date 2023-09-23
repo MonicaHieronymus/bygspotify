@@ -1,5 +1,5 @@
 ---
-const {img, header, text, playBtn, spotifyLogo} = Astro.props;
+const {img, header, text, playBtn, spotifyLogo, neW} = Astro.props;
 ---
 
 
@@ -9,6 +9,7 @@ const {img, header, text, playBtn, spotifyLogo} = Astro.props;
 			<img class="albumCover" src={img}>
 				{spotifyLogo && <img class="spotifyLogo" src="/icons/logo-alt.svg" alt="spotify logo"/>}
 				{playBtn && <img class="playBtn" src="/icons/play-icon.svg" alt="play ikon knap"/>}
+				{neW && <p class="new">NEW</p>}
 		
 			<h1> {header}</h1>
 		</div>
@@ -23,9 +24,20 @@ const {img, header, text, playBtn, spotifyLogo} = Astro.props;
 		opacity: 80%;
 	}
 
+.new {
+border: 2px solid;
+border-radius: 40px;
+border-color: #00CC00;
+background-color: #00CC00;
+width: 30%;
+text-align: center;
+margin-top: -9rem;
+z-index: 8;
+position: absolute;
+}
 	
 	.Card_bg{
-		background: #202020; /*color #3C3C3C skal bruges til hover */
+		background: #202020; 
 		max-width:180px;
 		position:relative;
 		z-index:1;

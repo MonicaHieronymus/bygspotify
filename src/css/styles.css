@@ -54,9 +54,12 @@ main {
   border-radius: 5px;
   padding-bottom: 1.3rem;
   padding: 1rem;
-  width: 96.2%;
+  width: 85%;
   height: 84.3%;
   margin-left: -0.5rem;
+
+  height: 685px; /* Adjust the height as needed */
+  overflow-y: scroll;
 }
 
 .grid_5 {

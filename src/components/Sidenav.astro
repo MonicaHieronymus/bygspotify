@@ -29,12 +29,19 @@
 </div>
 </div>
 
-
+<section class="scroll_container">
 <div class="createplaylist"> 
     <h3>Create your first playlist</h3>
 <p>It's easy, we'll help you</p>
 <button>Create playlist</button>
 </div>
+
+<div class="findpodcast"> 
+    <h3>Lets find some podcasts to follow</h3>
+<p>We'll keep you updated on new episodes</p>
+<button>Browse podcasts</button>
+</div>
+</section>
 
 <section class="footernav">
 
@@ -134,14 +141,40 @@ margin-top: -0rem;
   cursor: pointer;
 }
 
-.createplaylist {
+.scroll_container {
+    height: 160px; /* Adjust the height as needed */
+  overflow-y: scroll;
+}
+.createplaylist, .findpodcast {
     border-radius: 0.5rem;
   width: 260px;
   height: 150px;
   display: inline-block;
     background-color: rgb(36, 36, 36);
     margin-top: 1rem;
+    
 }
+
+.findpodcast h3, p, button {
+    margin-left: 1rem;
+}
+
+.findpodcast h3 {
+    font-size: 15px;
+}
+
+.findpodcast p {
+    font-size: 13px;
+}
+
+.findpodcast button {
+    border-radius: 2rem;
+    padding: 0.6rem;
+    border: 1px;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
 
 .createplaylist h3, p, button {
     margin-left: 1rem;
@@ -162,6 +195,7 @@ margin-top: -0rem;
     margin-left: 1rem;
     margin-top: 0.5rem;
 }
+
 
 .library {
     border-radius: 0.5rem;
