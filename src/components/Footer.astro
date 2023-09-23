@@ -1,10 +1,10 @@
 ---
 ---
 <section class="footer">
-    <div class="footer_p">
+    <div>
         <ul>
-        <li><p>PREVIEW OF SPOTIFY</p></li>
-        <li><p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p></li> 
+        <li><p class="preview">PREVIEW OF SPOTIFY</p></li>
+        <li><p class="signp">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p></li> 
     </ul> 
 </div>
     
@@ -28,25 +28,32 @@
     cursor: pointer;
     }
 
-    .signUpFree :hover {
-        background: rgb(255, 255, 255);
-    }
-
-    .signUpFree .signup{
-        margin-top: -1rem;
-        font-size: 20px;
-        display: flex;
-    }
-
     .signUpFree .signup {
         color: black;
         margin: auto;
-        margin-left: 0.5rem;
+        margin-left: 0.9rem;
+        font-size: 15px;
+        font-weight: bold;
     }
 
   .footer {
     border-radius: 1px;
     margin-top: 1rem;
+  }
+
+  .footer p{
+font-size: 12px;
+line-height: 20px;
+  }
+
+.preview{
+letter-spacing: 1.2px;
+  }
+
+.footer .signp{
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    line-height: 1rem;
   }
 
     ul {
