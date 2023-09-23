@@ -47,6 +47,8 @@ main {
   padding-top: 0.1rem;
   margin-left: -0.5rem;
   width: 99%;
+  height: 685px; /* Adjust the height as needed */
+  overflow-y: scroll;
 }
 
 .browseall {
