@@ -56,3 +56,12 @@ main {
   margin-top: 1.5rem;
   width: 99%;
 }
+
+a {
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
