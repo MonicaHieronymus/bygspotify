@@ -1,34 +1,61 @@
 ---
 ---
-<div class="footer">
+<section class="footer">
     <div class="footer_p">
-        <p>preview</p>
-        <p> sign up...</p>
-    </div>
-    
-    <div>
-        <button class="signUpFree">Sign op for free</button>
-    </div>
+        <ul>
+        <li><p>PREVIEW OF SPOTIFY</p></li>
+        <li><p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p></li> 
+    </ul> 
 </div>
+    
+        <div class="signUpFree">
+            <p class="signup">Sign up free</p>
+        </div>
+</section>
+
     <style> 
     
     .signUpFree{
-        margin-top:10px;
-        margin-bottom: 10px;
-        margin-right: 25px;
-        border-radius: 20px;
-        width: 140px;
-        height: 40px;
-    }
-    .footer_p{
-        margin-left:10px; 
-        display: flex;
-        flex-direction: row;
-       gap: 1rem;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    border-radius: 2rem;
+    padding: 1rem;
+    height: 20px;
+    width: 120px;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
     }
 
-    .footer p{
-        margin-top: 1rem;
+    .signUpFree :hover {
+        background: rgb(255, 255, 255);
+    }
+
+    .signUpFree .signup{
+        margin-top: -1rem;
+        font-size: 20px;
+        display: flex;
+    }
+
+    .signUpFree .signup {
+        color: black;
+        margin: auto;
+        margin-left: 0.5rem;
+    }
+
+  .footer {
+    border-radius: 1px;
+    margin-top: 1rem;
+  }
+
+    ul {
+list-style: none;
+margin-left: -1.5rem;
+    }
+
+    ul p {
+        margin-bottom: -0.5rem;
     }
 
     </style>
