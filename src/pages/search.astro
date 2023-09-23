@@ -2,39 +2,18 @@
 import "../css/styles.css";
 import Sidenav from "../components/Sidenav.astro";
 import Headersearch from "../components/Headersearch.astro";
-import Footer from "../components/Footer.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-	<link rel="icon" type= "image/svg+xml" href="/icons/logo-alt.svg"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Spotify - Search</title>
-</head>
-
-<body>
     
- <main class="grid_1-5">
-
+<MainLayout>
     <div>
         <Sidenav/>
     </div>
-    
+
     <div>
         <div class="headerbox">
           <Headersearch/>
         </div>
+</MainLayout>
 
-
-
-</main>
-
-<footer class="grid_1-1 footer_bg">
-    <Footer />
-</footer>
-
-</body>
-</html>
