@@ -46,6 +46,7 @@ main {
   padding-bottom: 1.3rem;
   padding-top: 0.1rem;
   margin-left: -0.5rem;
+  width: 99%;
 }
 
 .headerbox {
@@ -53,4 +54,5 @@ main {
   border-radius: 5px;
   margin-left: -0.5rem;
   margin-top: 1.5rem;
+  width: 99%;
 }
