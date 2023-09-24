@@ -20,11 +20,68 @@ main {
   gap: 1em;
 }
 
+/* Generel grid for sidensstruktur */
 .grid_1-5 {
   display: grid;
   grid-template-columns: 1fr 5fr;
   gap: 1rem;
   margin-top: -1.5rem;
+}
+
+/* Index side */
+
+.headerbox {
+  background-color: rgb(9, 9, 9);
+  border-radius: 5px;
+  margin-left: -0.5rem;
+  margin-top: 1.5rem;
+  width: 99%;
+}
+
+.colorbox {
+  background-color: rgb(18, 18, 18);
+  border-radius: 5px;
+  padding-bottom: 1.3rem;
+  padding-top: 0.1rem;
+  margin-left: -0.5rem;
+  width: 99%;
+  height: 692px;
+  overflow-y: scroll;
+}
+
+/* Search side */
+
+.grid_5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.headerbox2 {
+  background-color: rgb(9, 9, 9);
+  border-radius: 5px;
+  margin-left: -0.5rem;
+  margin-top: 1.5rem;
+  width: 89%;
+}
+
+.browseall {
+  background-color: rgb(18, 18, 18);
+  border-radius: 5px;
+  margin-left: -0.5rem;
+  width: 89%;
+  height: 715px;
+  overflow-y: scroll;
+}
+
+a {
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
 }
 
 .footer {
@@ -38,52 +95,4 @@ main {
     rgba(225, 120, 237, 1) 51%,
     rgba(0, 170, 255, 1) 100%
   );
-}
-
-.colorbox {
-  background-color: rgb(18, 18, 18);
-  border-radius: 5px;
-  padding-bottom: 1.3rem;
-  padding-top: 0.1rem;
-  margin-left: -0.5rem;
-  width: 99%;
-  height: 685px; /* Adjust the height as needed */
-  overflow-y: scroll;
-}
-
-.browseall {
-  background-color: rgb(18, 18, 18);
-  border-radius: 5px;
-  padding-bottom: 1.3rem;
-  padding: 1rem;
-  width: 85%;
-  height: 84.3%;
-  margin-left: -0.5rem;
-
-  height: 685px; /* Adjust the height as needed */
-  overflow-y: scroll;
-}
-
-.grid_5 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 2rem;
-  cursor: pointer;
-}
-
-.headerbox {
-  background-color: rgb(9, 9, 9);
-  border-radius: 5px;
-  margin-left: -0.5rem;
-  margin-top: 1.5rem;
-  width: 99%;
-}
-
-a {
-  color: rgb(179, 179, 179);
-  text-decoration: none;
-}
-
-a:hover {
-  color: white;
 }
