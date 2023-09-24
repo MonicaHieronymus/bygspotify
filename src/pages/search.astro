@@ -18,10 +18,10 @@ import MainLayout from "../layouts/MainLayout.astro";
             <Header searchbar ={true}/>
           </div>
 
-   <div class="browseall">
+   <section class="browseall">
     <Shelf name="Browse all">
         
-        <div class="grid_5">
+        <section class="grid_5">
     <Card img = "https://picsum.photos/id/65/150/150"  header ="Podcast" />
     <Card img = "https://picsum.photos/id/65/150/150" header ="Made For You"  neW = {true}/>
     <Card img = "https://picsum.photos/id/65/150/150"  header ="Charts" />
@@ -46,7 +46,12 @@ import MainLayout from "../layouts/MainLayout.astro";
     <Card img = "https://picsum.photos/id/65/150/150" header ="Pride"neW = {true} />
     <Card img = "https://picsum.photos/id/65/150/150" header ="Higher Ground" />
     </Shelf>
-    </div>
-</div>
+   </section>
+</section>
 </div>
 </MainLayout>
+
+
+<style>
+
+</style>
