@@ -72,6 +72,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 2rem;
   margin-right: -13rem;
+  cursor: pointer;
 }
 
 a {
